@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cholpon — UX Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navbar -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">C<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="scrollToSection('contact')">Let's talk</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#work" onclick="closeMobileMenu()">Work</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Available for work ✦</div>
+      <h1 class="hero-title reveal">
+        Designing<br />
+        <span class="outline-text">experiences</span><br />
+        that <span class="gradient-text">matter.</span>
+      </h1>
+      <p class="hero-desc reveal">
+        I'm <strong>Cholpon</strong> — a UX designer who bridges user needs and business goals through
+        research-driven, visually crafted digital products.
+      </p>
+      <div class="hero-actions reveal">
+        <button class="btn-primary" onclick="scrollToSection('work')">View my work</button>
+        <button class="btn-ghost" onclick="scrollToSection('about')">About me</button>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="24">0</span><span>+</span>
+          <p>Projects</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span><span>+</span>
+          <p>Years exp.</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="18">0</span><span></span>
+          <p>Happy clients</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card">
+        <div class="card-inner">
+          <div class="card-tag">UX Research</div>
+          <div class="card-img">
+            <div class="mock-screen">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-row wide"></div>
+                <div class="mock-row medium"></div>
+                <div class="mock-row narrow"></div>
+                <div class="mock-cards">
+                  <div class="mock-card purple"></div>
+                  <div class="mock-card blue"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-label">Mobile app redesign • 2024</div>
+        </div>
+      </div>
+      <div class="floating-chip chip-1">🎯 User Research</div>
+      <div class="floating-chip chip-2">✦ Figma</div>
+      <div class="floating-chip chip-3">🧪 Usability Testing</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="section-label">About me</div>
+          <h2 class="section-title">I craft interfaces <span class="gradient-text">people love</span> to use.</h2>
+          <p class="about-text">
+            With a background rooted in psychology and visual design, I approach every project with empathy first.
+            I spend time understanding the humans on the other side of the screen before I ever open Figma.
+          </p>
+          <p class="about-text">
+            My process combines rigorous user research, iterative prototyping, and close collaboration with
+            developers to ship products that look great and actually work.
+          </p>
+          <div class="about-tools">
+            <span class="tool-tag">Figma</span>
+            <span class="tool-tag">Maze</span>
+            <span class="tool-tag">Notion</span>
+            <span class="tool-tag">Framer</span>
+            <span class="tool-tag">Miro</span>
+            <span class="tool-tag">Principle</span>
+            <span class="tool-tag">Lottie</span>
+            <span class="tool-tag">Zeplin</span>
+          </div>
+          <a class="btn-primary" href="#contact">Work with me →</a>
+        </div>
+        <div class="about-right reveal">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar">
+              <div class="avatar-placeholder">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="100" cy="80" r="40" fill="#a78bfa" opacity="0.3"/>
+                  <ellipse cx="100" cy="160" rx="60" ry="40" fill="#a78bfa" opacity="0.2"/>
+                  <circle cx="100" cy="80" r="35" fill="#7c3aed" opacity="0.5"/>
+                  <circle cx="100" cy="78" r="28" fill="#c4b5fd" opacity="0.8"/>
+                  <text x="100" y="90" text-anchor="middle" font-size="36" fill="#1e1b4b">👩</text>
+                </svg>
+              </div>
+            </div>
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-badge">
+              <span>✦</span> Open to opportunities
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Capabilities</div>
+        <h2 class="section-title">What I <span class="gradient-text">bring</span> to the table.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon">🔍</div>
+          <h3>User Research</h3>
+          <p>Interviews, surveys, competitive analysis, and usability studies that uncover real user needs.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="100">
+          <div class="skill-icon">🎨</div>
+          <h3>UI Design</h3>
+          <p>Pixel-perfect interfaces with strong visual hierarchy, motion, and accessibility baked in.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="200">
+          <div class="skill-icon">🔁</div>
+          <h3>Prototyping</h3>
+          <p>Interactive prototypes in Figma and Framer that communicate flow and feel before dev.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="300">
+          <div class="skill-icon">📐</div>
+          <h3>Design Systems</h3>
+          <p>Scalable component libraries and token-based systems that speed up design and dev.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="400">
+          <div class="skill-icon">🧭</div>
+          <h3>Information Architecture</h3>
+          <p>Clear content structures and navigation patterns that reduce cognitive load.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card reveal" data-delay="500">
+          <div class="skill-icon">🤝</div>
+          <h3>Cross-functional Collab</h3>
+          <p>Bridging design and engineering with specs, handoffs, and clear documentation.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Selected work</div>
+        <h2 class="section-title">Case <span class="gradient-text">studies.</span></h2>
+      </div>
+      <div class="work-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-visual" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);">
+            <div class="project-mockup">
+              <div class="pm-screen">
+                <div class="pm-nav"></div>
+                <div class="pm-hero-block purple-block"></div>
+                <div class="pm-rows">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                </div>
+                <div class="pm-grid">
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Mobile App</span>
+              <span class="ptag">UX Research</span>
+            </div>
+            <h3>FinTrack — Personal Finance App</h3>
+            <p>Redesigned a fintech app's onboarding flow, reducing drop-off by 43% through user interviews and iterative testing.</p>
+            <div class="project-meta">
+              <span>Figma · Maze · 2024</span>
+              <button class="project-btn" onclick="openModal('modal1')">View case study →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-delay="150">
+          <div class="project-visual" style="background: linear-gradient(135deg, #0c1a2e 0%, #0d2d4a 50%, #0e4166 100%);">
+            <div class="project-mockup">
+              <div class="pm-screen">
+                <div class="pm-nav"></div>
+                <div class="pm-hero-block blue-block"></div>
+                <div class="pm-rows">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                </div>
+                <div class="pm-grid">
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Dashboard</span>
+              <span class="ptag">B2B SaaS</span>
+            </div>
+            <h3>Nexus Analytics Dashboard</h3>
+            <p>From zero to a comprehensive data platform — defining IA, designing 80+ components, and validating with 12 user sessions.</p>
+            <div class="project-meta">
+              <span>Figma · FigJam · 2023</span>
+              <button class="project-btn" onclick="openModal('modal2')">View case study →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card project-card--wide reveal" data-delay="300">
+          <div class="project-visual" style="background: linear-gradient(135deg, #1a0a2e 0%, #2d1057 50%, #4a1d96 100%);">
+            <div class="project-mockup">
+              <div class="pm-screen wide-screen">
+                <div class="pm-nav"></div>
+                <div class="pm-two-col">
+                  <div class="pm-sidebar"></div>
+                  <div class="pm-main">
+                    <div class="pm-hero-block pink-block"></div>
+                    <div class="pm-rows">
+                      <div class="pm-row"></div>
+                      <div class="pm-row short"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">E-commerce</span>
+              <span class="ptag">Design System</span>
+              <span class="ptag">Web</span>
+            </div>
+            <h3>Lumière — Luxury Fashion Platform</h3>
+            <p>Built an end-to-end design system with 200+ components and redesigned the checkout flow, improving conversion by 31%.</p>
+            <div class="project-meta">
+              <span>Figma · Zeplin · Principle · 2023</span>
+              <button class="project-btn" onclick="openModal('modal3')">View case study →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-delay="0">
+          <div class="project-visual" style="background: linear-gradient(135deg, #0a1628 0%, #122540 50%, #1a3a5c 100%);">
+            <div class="project-mockup">
+              <div class="pm-screen">
+                <div class="pm-nav"></div>
+                <div class="pm-hero-block teal-block"></div>
+                <div class="pm-rows">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                </div>
+                <div class="pm-grid">
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Health Tech</span>
+              <span class="ptag">Accessibility</span>
+            </div>
+            <h3>Wellpath — Mental Health App</h3>
+            <p>Designed a calming, accessible mental wellness tracker with WCAG AA compliance and trauma-informed UX principles.</p>
+            <div class="project-meta">
+              <span>Figma · Lottie · 2023</span>
+              <button class="project-btn" onclick="openModal('modal4')">View case study →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-delay="150">
+          <div class="project-visual" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);">
+            <div class="project-mockup">
+              <div class="pm-screen">
+                <div class="pm-nav"></div>
+                <div class="pm-hero-block indigo-block"></div>
+                <div class="pm-rows">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                </div>
+                <div class="pm-grid">
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                  <div class="pm-cell"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">EdTech</span>
+              <span class="ptag">Gamification</span>
+            </div>
+            <h3>Learnly — Online Learning Platform</h3>
+            <p>Revamped learner engagement through gamification design — streaks, badges, and adaptive feedback loops.</p>
+            <div class="project-meta">
+              <span>Figma · Framer · 2022</span>
+              <button class="project-btn" onclick="openModal('modal5')">View case study →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">How I work</div>
+        <h2 class="section-title">My design <span class="gradient-text">process.</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal" data-delay="0">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Discover</h3>
+            <p>Stakeholder interviews, user research, and competitive audits to define the real problem.</p>
+          </div>
+          <div class="step-arrow">→</div>
+        </div>
+        <div class="process-step reveal" data-delay="100">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Define</h3>
+            <p>Synthesize insights into personas, journey maps, and clear design principles.</p>
+          </div>
+          <div class="step-arrow">→</div>
+        </div>
+        <div class="process-step reveal" data-delay="200">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Design</h3>
+            <p>Wireframes to high-fidelity prototypes — exploring many directions before committing.</p>
+          </div>
+          <div class="step-arrow">→</div>
+        </div>
+        <div class="process-step reveal" data-delay="300">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Deliver</h3>
+            <p>Handoff specs, design system documentation, and dev support through launch.</p>
+          </div>
+          <div class="step-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Kind words</div>
+        <h2 class="section-title">What clients <span class="gradient-text">say.</span></h2>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"Cholpon transformed our product from something developers built to something users love. The research depth was unlike anything I'd seen."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:#7c3aed;">A</div>
+            <div>
+              <strong>Asel Nurova</strong>
+              <span>CPO @ FinTrack</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"The design system Cholpon delivered cut our dev time in half. Every component was documented perfectly and the visual language was spot-on."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:#2563eb;">M</div>
+            <div>
+              <strong>Marcus Chen</strong>
+              <span>Lead Engineer @ Nexus</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"Working with Cholpon felt like having a product partner, not just a designer. She asked the right questions and pushed back when needed."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:#059669;">S</div>
+            <div>
+              <strong>Sara Bekova</strong>
+              <span>Founder @ Wellpath</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="t-stars">★★★★★</div>
+          <p>"Our conversion rate jumped 31% after the Lumière redesign. Cholpon's attention to the luxury buyer's psychology was remarkable."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:#dc2626;">J</div>
+            <div>
+              <strong>Jean-Luc Moreau</strong>
+              <span>Director @ Lumière</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="t-btn" id="tPrev" onclick="slideTestimonials(-1)">←</button>
+        <div class="t-dots" id="tDots"></div>
+        <button class="t-btn" id="tNext" onclick="slideTestimonials(1)">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Let's build something <span class="gradient-text">great.</span></h2>
+        <p class="contact-sub">I'm currently open to new projects and full-time roles. Drop a message and I'll get back within 24 hours.</p>
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">What's this about?</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+              <option value="project">New project</option>
+              <option value="job">Job opportunity</option>
+              <option value="collab">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send message →</button>
+        </form>
+        <div class="contact-alt">
+          <span>Or reach me directly:</span>
+          <div class="social-links">
+            <a href="mailto:duyshenlievadil02@gmail.com" class="social-link">Email</a>
+            <a href="https://linkedin.com/in/cholpon" class="social-link" target="_blank">LinkedIn</a>
+            <a href="https://dribbble.com/cholpon" class="social-link" target="_blank">Dribbble</a>
+            <a href="https://behance.net/cholpon" class="social-link" target="_blank">Behance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">C<span class="accent">.</span></div>
+        <p>© 2024 Cholpon. Designed with intention.</p>
+        <div class="footer-links">
+          <a href="#hero">Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal-overlay" id="modal1" onclick="closeModal('modal1')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal1')">✕</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b, #4c1d95);">
+        <span class="ptag">Mobile App</span>
+        <h2>FinTrack — Personal Finance App</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Challenge</h3>
+          <p>FinTrack's onboarding flow had a 67% drop-off rate. Users were overwhelmed by the number of steps and confused by financial jargon. The business needed to cut that number in half.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Process</h3>
+          <p>I conducted 8 user interviews, analyzed session recordings, and ran a heuristic evaluation. Key issues: too many form fields upfront, unclear value proposition, no progress indicator.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Solution</h3>
+          <p>Redesigned onboarding with progressive disclosure — 3 steps instead of 9, contextual explanations, animated micro-interactions, and a single "quick start" path for busy users.</p>
+        </div>
+        <div class="modal-results">
+          <div class="modal-stat"><span>43%</span><p>Drop-off reduction</p></div>
+          <div class="modal-stat"><span>4.8★</span><p>App Store rating</p></div>
+          <div class="modal-stat"><span>2.1×</span><p>Activation increase</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal2" onclick="closeModal('modal2')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal2')">✕</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #0c1a2e, #0e4166);">
+        <span class="ptag">Dashboard</span>
+        <h2>Nexus Analytics Dashboard</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Challenge</h3>
+          <p>A B2B SaaS startup needed their first analytics dashboard designed from scratch, serving both data analysts and C-suite executives with very different needs.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Process</h3>
+          <p>Ran stakeholder workshops to map user roles, conducted card sorting for IA, and created a component library of 80+ elements before building out 12 core screens.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Solution</h3>
+          <p>Role-based dashboards with shared navigation, customizable widget grid, and a "snapshot" view for executives needing quick KPI overviews.</p>
+        </div>
+        <div class="modal-results">
+          <div class="modal-stat"><span>80+</span><p>Components built</p></div>
+          <div class="modal-stat"><span>12</span><p>User sessions</p></div>
+          <div class="modal-stat"><span>94%</span><p>Task success rate</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal3" onclick="closeModal('modal3')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal3')">✕</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a0a2e, #4a1d96);">
+        <span class="ptag">E-commerce</span>
+        <h2>Lumière — Luxury Fashion Platform</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Challenge</h3>
+          <p>A luxury fashion brand's e-commerce site felt generic and didn't match the premium experience customers expected. The checkout had a 78% abandonment rate.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Process</h3>
+          <p>Analyzed luxury buyer psychology, audited 6 competitor sites, ran A/B tests on checkout steps, and built a full design system ensuring consistency across 200+ pages.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Solution</h3>
+          <p>Editorial-inspired layouts, streamlined 2-step checkout, trust signals throughout, and a refined design system reflecting the brand's haute couture identity.</p>
+        </div>
+        <div class="modal-results">
+          <div class="modal-stat"><span>31%</span><p>Conversion increase</p></div>
+          <div class="modal-stat"><span>200+</span><p>Components</p></div>
+          <div class="modal-stat"><span>52%</span><p>Cart abandonment drop</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal4" onclick="closeModal('modal4')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal4')">✕</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #0a1628, #1a3a5c);">
+        <span class="ptag">Health Tech</span>
+        <h2>Wellpath — Mental Health App</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Challenge</h3>
+          <p>Design a mental wellness app that feels safe and calming for users experiencing anxiety or depression — zero clinical coldness, full WCAG AA accessibility.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Process</h3>
+          <p>Consulted with a clinical psychologist, conducted trauma-informed design workshops, and tested with neurodivergent users to validate accessibility.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Solution</h3>
+          <p>Soft, organic shapes, a muted color palette, gentle Lottie animations, and a check-in flow designed around emotional vocabulary rather than clinical terms.</p>
+        </div>
+        <div class="modal-results">
+          <div class="modal-stat"><span>WCAG AA</span><p>Accessibility</p></div>
+          <div class="modal-stat"><span>4.9★</span><p>User rating</p></div>
+          <div class="modal-stat"><span>78%</span><p>Daily retention</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal5" onclick="closeModal('modal5')">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal5')">✕</button>
+      <div class="modal-header" style="background: linear-gradient(135deg, #1a1a2e, #0f3460);">
+        <span class="ptag">EdTech</span>
+        <h2>Learnly — Online Learning Platform</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Challenge</h3>
+          <p>Learner engagement on Learnly was dropping after the first week. Users signed up, completed one lesson, and never returned.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Process</h3>
+          <p>Analyzed behavioral data, interviewed 15 churned users, and studied gamification patterns in Duolingo, Headspace, and Habitica for inspiration.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Solution</h3>
+          <p>Designed a streak system, achievement badges, peer leaderboards, and adaptive feedback that celebrates small wins to build learning habits.</p>
+        </div>
+        <div class="modal-results">
+          <div class="modal-stat"><span>3.4×</span><p>Week-2 retention</p></div>
+          <div class="modal-stat"><span>61%</span><p>Daily active users</p></div>
+          <div class="modal-stat"><span>89%</span><p>Completion rate</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">Message sent! I'll reply within 24 hours. ✦</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
