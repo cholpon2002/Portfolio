@@ -1407,6 +1407,49 @@ button { cursor: none; font-family: var(--font); }
 }
 
 /* ============================================================
+   SCHUMANN SCREENSHOT DISPLAY
+   ============================================================ */
+.project-visual--photo { overflow: hidden; position: relative; }
+
+.schumann-screens {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+  padding: 24px 16px 0;
+}
+
+.schumann-img {
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+}
+
+.schumann-img--1 { width: 28%; height: 85%; }
+.schumann-img--2 { width: 30%; height: 95%; }
+.schumann-img--3 { width: 28%; height: 85%; }
+
+.modal-screens {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 0 0 16px;
+  margin-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.modal-screens img {
+  height: 320px;
+  width: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* ============================================================
    SCROLLBAR
    ============================================================ */
 ::-webkit-scrollbar { width: 6px; }
