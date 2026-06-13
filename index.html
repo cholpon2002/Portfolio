@@ -18,11 +18,10 @@
     <div class="nav-logo">C<span class="accent">.</span></div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-cta" onclick="scrollToSection('contact')">Let's talk</button>
+    <button class="nav-cta" onclick="scrollToSection('contact')">Contact me</button>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -31,7 +30,6 @@
   <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
-      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
       <li><a href="#work" onclick="closeMobileMenu()">Work</a></li>
       <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
     </ul>
@@ -77,7 +75,7 @@
     <div class="hero-visual reveal">
       <div class="hero-card">
         <div class="card-inner">
-          <div class="card-tag">Museum App · UX/UI</div>
+          <div class="card-tag">Enterprise UX · ContiConnect</div>
           <div class="card-img">
             <div class="mock-screen">
               <div class="mock-bar"></div>
@@ -86,13 +84,13 @@
                 <div class="mock-row medium"></div>
                 <div class="mock-row narrow"></div>
                 <div class="mock-cards">
+                  <div class="mock-card green"></div>
                   <div class="mock-card purple"></div>
-                  <div class="mock-card blue"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card-label">Robert Schumann Haus Zwickau · 2024</div>
+          <div class="card-label">Continental · ContiConnect Portal</div>
         </div>
       </div>
       <div class="floating-chip chip-1">🔍 UX Research</div>
@@ -108,24 +106,31 @@
       <div class="about-grid">
         <div class="about-left reveal">
           <div class="section-label">About me</div>
-          <h2 class="section-title">I craft interfaces <span class="gradient-text">people love</span> to use.</h2>
+          <h2 class="section-title">Design rooted in <span class="gradient-text">curiosity.</span></h2>
           <p class="about-text">
-            I'm a UX/UI Designer at Continental, working on ContiConnect — a smart tyre management platform that integrates a web portal with physical sensor products and predictive data features. I design portal interfaces and help bridge the gap between hardware and software experience.
+            I'm a UX/UI Designer with a background in Computer Science. My technical background helps me work closely with developers, while my curiosity about people drives my design process.
           </p>
           <p class="about-text">
-            My Computer Science background means I design with implementation in mind and can cooperate closely with developers — speaking their language while keeping users at the centre of every decision.
+            Coming originally from Kyrgyzstan, with Tatar, Uzbek, Kyrgyz, and Bashkir roots, I've grown up between different cultures and languages. Today, I study and work in Germany.
+          </p>
+          <p class="about-text">
+            My experience includes UX research, interaction design, prototyping, and digital product development. I enjoy working at the intersection of design, technology, and people, simplifying complex problems and systems.
+          </p>
+          <p class="about-text">
+            Empathy is probably my biggest strength. I genuinely enjoy understanding people, their needs, motivations, and challenges, and always include these in designing process. I'm especially interested in accessibility, inclusion, and sustainability.
           </p>
           <div class="about-tools">
-            <span class="tool-tag">Figma</span>
-            <span class="tool-tag">UX Research</span>
+            <span class="tool-tag">Wireframing</span>
             <span class="tool-tag">Prototyping</span>
-            <span class="tool-tag">Scrum / Kanban</span>
-            <span class="tool-tag">Flutter</span>
-            <span class="tool-tag">Miro</span>
-            <span class="tool-tag">Notion</span>
+            <span class="tool-tag">User Research</span>
             <span class="tool-tag">Usability Testing</span>
+            <span class="tool-tag">Data Analysis</span>
+            <span class="tool-tag">User Flows</span>
+            <span class="tool-tag">A/B Testing</span>
+            <span class="tool-tag">Storyboarding</span>
+            <span class="tool-tag">Personas</span>
           </div>
-          <a class="btn-primary" href="#contact">Work with me →</a>
+          <a class="btn-primary" href="#contact">Contact me →</a>
         </div>
         <div class="about-right reveal">
           <div class="about-avatar-wrap">
@@ -133,7 +138,7 @@
               <div class="avatar-placeholder">
                 <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="100" cy="80" r="40" fill="#a78bfa" opacity="0.3"/>
-                  <ellipse cx="100" cy="160" rx="60" ry="40" fill="#a78bfa" opacity="0.2"/>
+                  <ellipse cx="100" cy="160" rx="60" ry="40" fill="#4ade80" opacity="0.15"/>
                   <circle cx="100" cy="80" r="35" fill="#7c3aed" opacity="0.5"/>
                   <circle cx="100" cy="78" r="28" fill="#c4b5fd" opacity="0.8"/>
                   <text x="100" y="90" text-anchor="middle" font-size="36" fill="#1e1b4b">👩</text>
@@ -149,24 +154,6 @@
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="skills section" id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">Capabilities</div>
-        <h2 class="section-title">What I <span class="gradient-text">bring</span> to the table.</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card reveal" data-delay="0"><div class="skill-icon">🔍</div><h3>User Research</h3><p>Competitive analysis of 10+ apps, user interviews, and usability testing across all age groups to uncover real needs.</p><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
-        <div class="skill-card reveal" data-delay="100"><div class="skill-icon">🎨</div><h3>UI Design</h3><p>Clean, accessible interfaces with strong visual hierarchy — from low-fidelity wireframes to polished high-fidelity prototypes.</p><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
-        <div class="skill-card reveal" data-delay="200"><div class="skill-icon">🔁</div><h3>Prototyping</h3><p>Interactive Figma prototypes that communicate flow and feel, enabling meaningful user testing before development.</p><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
-        <div class="skill-card reveal" data-delay="300"><div class="skill-icon">🗂️</div><h3>Scrum & Agile</h3><p>Experienced Scrum Master — sprint planning, backlog management, retrospectives and Kanban across cross-functional teams.</p><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
-        <div class="skill-card reveal" data-delay="400"><div class="skill-icon">🧭</div><h3>UX Strategy</h3><p>Translating user insights into clear design principles, user flows, and product decisions that align with business goals.</p><div class="skill-bar"><div class="skill-fill" data-width="86"></div></div></div>
-        <div class="skill-card reveal" data-delay="500"><div class="skill-icon">🤝</div><h3>Cross-functional Collab</h3><p>Bridging design and development — working closely with Flutter/Dart developers to bring designs to life.</p><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
-      </div>
-    </div>
-  </section>
-
   <!-- Work -->
   <section class="work section" id="work">
     <div class="container">
@@ -176,8 +163,39 @@
       </div>
       <div class="work-grid">
 
-        <!-- Schumann — FEATURED (wide) -->
+        <!-- Continental — FEATURED (wide) -->
         <div class="project-card project-card--wide reveal" data-delay="0">
+          <div class="project-visual" style="background:linear-gradient(135deg,#050f05,#0a2010,#0d3018)">
+            <div class="project-mockup">
+              <div class="pm-screen wide-screen">
+                <div class="pm-nav"></div>
+                <div class="pm-two-col">
+                  <div class="pm-sidebar"></div>
+                  <div class="pm-main">
+                    <div class="pm-hero-block green-block"></div>
+                    <div class="pm-rows"><div class="pm-row"></div><div class="pm-row short"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">Automotive</span>
+              <span class="ptag">Enterprise UX</span>
+              <span class="ptag">Portal Design</span>
+            </div>
+            <h3>Continental — ContiConnect</h3>
+            <p>UX/UI design for ContiConnect, Continental's smart tyre management platform — integrating a web portal with physical sensor products, predictive data, and fleet management features.</p>
+            <div class="project-meta">
+              <span>Figma · Enterprise Design</span>
+              <button class="project-btn" onclick="openModal('modal4')">View case study →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schumann -->
+        <div class="project-card project-card--wide reveal" data-delay="100">
           <div class="project-visual project-visual--photo" style="background:linear-gradient(135deg,#1a1035,#2d1b6b,#3b2080)">
             <div class="schumann-screens">
               <img src="images/schumann-1.jpg" alt="Schumann app — language selection screen" class="schumann-img schumann-img--1" />
@@ -195,14 +213,14 @@
             <h3>Robert Schumann Haus — Museum Guide App</h3>
             <p>Designed a bilingual (DE/EN) cross-platform museum app for Robert-Schumann-Haus Zwickau, providing visitors with a virtual room-by-room tour, multimedia content, and an interactive map. Led the full design process and served as Scrum Master for the development team.</p>
             <div class="project-meta">
-              <span>Figma · Flutter · Scrum · 2024</span>
+              <span>Figma · Flutter · Scrum</span>
               <button class="project-btn" onclick="openModal('modal1')">View case study →</button>
             </div>
           </div>
         </div>
 
         <!-- Girls for Girls -->
-        <div class="project-card reveal" data-delay="100">
+        <div class="project-card reveal" data-delay="200">
           <div class="project-visual" style="background:linear-gradient(135deg,#2d0a3e,#6b1a6b,#9c2a7a)">
             <div class="project-mockup">
               <div class="pm-screen">
@@ -228,7 +246,7 @@
         </div>
 
         <!-- Fashion Mart -->
-        <div class="project-card reveal" data-delay="200">
+        <div class="project-card reveal" data-delay="300">
           <div class="project-visual" style="background:linear-gradient(135deg,#0a1a2e,#1a3a5c,#0e4a6a)">
             <div class="project-mockup">
               <div class="pm-screen">
@@ -249,37 +267,6 @@
             <div class="project-meta">
               <span>Figma · UI Design</span>
               <button class="project-btn" onclick="openModal('modal3')">Preview →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Continental -->
-        <div class="project-card project-card--wide reveal" data-delay="300">
-          <div class="project-visual" style="background:linear-gradient(135deg,#0a0a0a,#1a1a1a,#2a2a2a)">
-            <div class="project-mockup">
-              <div class="pm-screen wide-screen">
-                <div class="pm-nav"></div>
-                <div class="pm-two-col">
-                  <div class="pm-sidebar"></div>
-                  <div class="pm-main">
-                    <div class="pm-hero-block indigo-block"></div>
-                    <div class="pm-rows"><div class="pm-row"></div><div class="pm-row short"></div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <div class="project-tags">
-              <span class="ptag">Automotive</span>
-              <span class="ptag">Enterprise UX</span>
-              <span class="ptag">Coming soon</span>
-            </div>
-            <h3>Continental — ContiConnect</h3>
-            <p>UX/UI design for ContiConnect, Continental's smart tyre management platform — integrating a web portal with physical sensor products, predictive data, and fleet management features.</p>
-            <div class="project-meta">
-              <span>Figma · Enterprise Design</span>
-              <button class="project-btn" onclick="openModal('modal4')">Preview →</button>
             </div>
           </div>
         </div>
@@ -306,23 +293,25 @@
     <div class="container">
       <div class="contact-inner reveal">
         <div class="section-label">Get in touch</div>
-        <h2 class="section-title">Let's build something <span class="gradient-text">great.</span></h2>
-        <p class="contact-sub">I'm a UX/UI Designer at Continental. If you'd like to collaborate, have an opportunity, or just want to connect — I'd love to hear from you.</p>
-        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Jane Smith" required /></div>
-            <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="jane@company.com" required /></div>
-          </div>
-          <div class="form-group"><label for="subject">What's this about?</label><select id="subject" name="subject"><option value="">Select a topic</option><option value="internship">Internship opportunity</option><option value="project">Project collaboration</option><option value="other">Other</option></select></div>
-          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity…" required></textarea></div>
-          <button type="submit" class="btn-primary form-submit">Send message →</button>
-        </form>
-        <div class="contact-alt"><span>Or reach me directly:</span><div class="social-links"><a href="mailto:cholponsultanova2224@gmail.com" class="social-link">Email</a><a href="https://www.linkedin.com/in/cholpon-sultanova/" class="social-link" target="_blank">LinkedIn</a><a href="https://cholpons.notion.site/Design-Portfolio-4d3c76912d2945119c057ecd61fe89ce" class="social-link" target="_blank">Notion Portfolio</a></div></div>
+        <h2 class="section-title">Let's <span class="gradient-text">connect.</span></h2>
+        <p class="contact-sub">I'm always open to new conversations — whether it's a collaboration, an opportunity, or just a hello.</p>
+        <div class="contact-links-big">
+          <a href="mailto:cholponsultanova2224@gmail.com" class="contact-link-big">
+            <span class="clb-icon">✉</span>
+            <span class="clb-label">cholponsultanova2224@gmail.com</span>
+            <span class="clb-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/cholpon-sultanova/" target="_blank" class="contact-link-big">
+            <span class="clb-icon">in</span>
+            <span class="clb-label">linkedin.com/in/cholpon-sultanova</span>
+            <span class="clb-arrow">→</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer-inner"><div class="footer-logo">C<span class="accent">.</span></div><p>© 2024 Cholpon. Designed with intention.</p><div class="footer-links"><a href="#hero">Top ↑</a></div></div></div></footer>
+  <footer class="footer"><div class="container"><div class="footer-inner"><div class="footer-logo">C<span class="accent">.</span></div><p>© 2025 Cholpon Sultanova.</p><div class="footer-links"><a href="#hero">Top ↑</a></div></div></div></footer>
 
   <!-- Modal: Schumann -->
   <div class="modal-overlay" id="modal1" onclick="closeModal('modal1')">
@@ -379,7 +368,7 @@
       <div class="modal-body">
         <div class="modal-section">
           <h3>Coming Soon</h3>
-          <p>The full case study for this project is being prepared and will be published here shortly. Check back soon!</p>
+          <p>The full case study for this project is being prepared and will be published here shortly.</p>
         </div>
       </div>
     </div>
@@ -396,7 +385,7 @@
       <div class="modal-body">
         <div class="modal-section">
           <h3>Coming Soon</h3>
-          <p>The full case study for this project is being prepared and will be published here shortly. Check back soon!</p>
+          <p>The full case study for this project is being prepared and will be published here shortly.</p>
         </div>
       </div>
     </div>
@@ -406,9 +395,9 @@
   <div class="modal-overlay" id="modal4" onclick="closeModal('modal4')">
     <div class="modal" onclick="event.stopPropagation()">
       <button class="modal-close" onclick="closeModal('modal4')">✕</button>
-      <div class="modal-header" style="background:linear-gradient(135deg,#0a0a0a,#2a2a2a)">
+      <div class="modal-header" style="background:linear-gradient(135deg,#050f05,#0d3018)">
         <span class="ptag">Automotive · Enterprise UX</span>
-        <h2>Continental</h2>
+        <h2>Continental — ContiConnect</h2>
       </div>
       <div class="modal-body">
         <div class="modal-section">
